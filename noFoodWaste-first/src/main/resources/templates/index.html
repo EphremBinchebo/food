@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="Harsh Kapadia">
+
+        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" th:href="@{/css/main.css}"
+              href="../../css/main.css" />
+        
+        <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" sizes="any">
+
+        <script defer src="./js/account_dropdown.js"></script>
+        <script defer src="./js/burger_menu_dropdown.js"></script>
+
+        <title>Waste No Food Team</title>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="left-side">
+                <div class="burger-menu">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+
+<!--                <div class="logo">-->
+<!--                    <a href="#"><img src="./images/logo.svg" alt=""></a>-->
+<!--                </div>-->
+    
+                <ul class="navbar-main-ul hide-burger-menu burger-menu-dropdown">
+                    <a  th:href= "@{/home}"><li>Home</li></a>
+                    <a th:href= "@{/login}"><li>Log In</li></a>
+                    <a th:href= "@{/registration}"><li>Sign Up</li></a>
+                    <a th:href= "@{/index}"><li>Contact Us</li></a>
+                </ul>
+            </div>
+
+            <div class="right-side">
+                <div class="account">
+                    <img src="./static/img/harsh_kapadia_pic.jpg" alt="HK">
+                    
+                    <div class="dropdown-caret"></div>
+                </div>
+                
+<!--                <div class="dropdown hide">-->
+<!--                    <div class="user-name">HarshKapadia2</div>-->
+
+<!--                    <ul>-->
+<!--                        <a href="#"><li>Your profile</li></a>-->
+<!--                        <a href="#"><li>Settings</li></a>-->
+<!--                        <a href="#"><li>Log Out</li></a>-->
+<!--                    </ul>-->
+<!--                </div>-->
+            </div>
+        </nav>
+
+        <main>
+            <div class="title">Contact us</div>
+            <div class="title-info">We'll get back to you soon!</div>
+
+            <form action="" method="" class="form">
+                <div class="input-group">
+                    <input type="text" name="first_name" id="first-name" placeholder="First name">
+                    <label for="first-name">First name</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" name="last_name" id="last-name" placeholder="Last Name">
+                    <label for="last-name">Last name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="e-mail" id="e-mail" placeholder="e-mail">
+                    <label for="e-mail">e-mail</label>
+                </div>
+
+                <div class="textarea-group">
+                    <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <div class="button-div">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/facebook.svg" alt="Facebook"></a>
+            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/github.svg" alt="GitHub"></a>
+            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/instagram.svg" alt="Instagram"></a>
+ 
+            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/twitter.svg" alt="Twitter"></a>
+            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/youtube.svg" alt="YouTube"></a>
+        </footer>
+    </body>
+</html>
