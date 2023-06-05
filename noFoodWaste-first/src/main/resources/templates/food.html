@@ -1,0 +1,163 @@
+<!--&lt;!&ndash;-->
+<!--Author: W3layouts-->
+<!--Author URL: http://w3layouts.com-->
+<!--&ndash;&gt;-->
+<!--<!doctype html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+
+<!--<head>-->
+<!--    &lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <title>Wast No Food Application</title>-->
+<!--    &lt;!&ndash; Google fonts &ndash;&gt;-->
+<!--    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">-->
+<!--    &lt;!&ndash; Template CSS Style link &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="/css/style-starter.css">-->
+<!--    <link rel="stylesheet" th:href="@{/css/main.css}"-->
+<!--          href="../../css/main.css" />-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<div th:replace="header:: header"></div>-->
+
+<!--&lt;!&ndash; banner section &ndash;&gt;-->
+<!--<section id="home" class="w3l-banner py-5">-->
+<!--    <div class="banner-content">-->
+<!--        <div class="container py-4">-->
+<!--            <div class="row align-items-center pt-sm-5 pt-4">-->
+<!--                <div class="col-md-6">-->
+<!--                    <h3 class="mb-lg-4 mb-3">Hunger People Deserve <span class="d-block">Food</span>-->
+<!--                    </h3>-->
+<!--                    <p class="banner-sub">Donate Food, Receive Food & Make Safe Environment</p>-->
+<!--                    <div class="d-flex align-items-center buttons-banner">-->
+<!--                        <a class="btn btn-style mt-lg-5 mt-4" th:href= "@{/registration}">Sign Up Now</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash;                    <div class="col-md-6 right-banner-2 text-end position-relative mt-md-0 mt-5">&ndash;&gt;-->
+<!--                &lt;!&ndash;                        <div class="sub-banner-image mx-auto">&ndash;&gt;-->
+<!--                &lt;!&ndash;                            <img src="assets/images/banner.png"&ndash;&gt;-->
+<!--                &lt;!&ndash;                                 class="img-fluid position-relative" width="200" height="100"alt=" ">&ndash;&gt;-->
+<!--                &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                &lt;!&ndash;                        <div class="banner-style-1 position-absolute">&ndash;&gt;-->
+<!--                &lt;!&ndash;                            <div class="banner-style-2 position-relative">&ndash;&gt;-->
+<!--                &lt;!&ndash;                                <h4>Back to Main Page</h4>&ndash;&gt;-->
+<!--                &lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--                &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; //banner section &ndash;&gt;-->
+
+<!--&lt;!&ndash; call block &ndash;&gt;-->
+<!--<section class="w3l-call-to-action-6">-->
+<!--    <div class="container py-md-5 py-sm-4 py-5">-->
+<!--        <div class="d-lg-flex align-items-center justify-content-between">-->
+<!--            <div class="left-content-call">-->
+<!--                <h3 class="title-big">Call Us </h3>-->
+<!--                <p class="text-white mt-1">Begin the change today!</p>-->
+<!--            </div>-->
+<!--            <div class="right-content-call mt-lg-0 mt-4">-->
+<!--                <ul class="buttons">-->
+<!--                    <li class="phone-sec me-lg-4"><i class="fas fa-phone-volume"></i>-->
+<!--                        <a class="call-style-w3" href="tel:+1(23) 456 789 0000">1-866-822-2024</a>-->
+<!--                    </li>-->
+<!--                    <li><a class="btn btn-style btn-style-2 mt-lg-0 mt-3">Join the app to day</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<div th:replace="footer:: footer"></div>-->
+
+
+<!--&lt;!&ndash; Js scripts &ndash;&gt;-->
+<!--&lt;!&ndash; move top &ndash;&gt;-->
+<!--<button onclick="topFunction()" id="movetop" title="Go to top">-->
+<!--    <span class="fas fa-level-up-alt" aria-hidden="true"></span>-->
+<!--</button>-->
+<!--<script>-->
+<!--        // When the user scrolls down 20px from the top of the document, show the button-->
+<!--        window.onscroll = function () {-->
+<!--            scrollFunction()-->
+<!--        };-->
+
+<!--        function scrollFunction() {-->
+<!--            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {-->
+<!--                document.getElementById("movetop").style.display = "block";-->
+<!--            } else {-->
+<!--                document.getElementById("movetop").style.display = "none";-->
+<!--            }-->
+<!--        }-->
+
+<!--        // When the user clicks on the button, scroll to the top of the document-->
+<!--        function topFunction() {-->
+<!--            document.body.scrollTop = 0;-->
+<!--            document.documentElement.scrollTop = 0;-->
+<!--        }-->
+<!--    </script>-->
+<!--&lt;!&ndash; //move top &ndash;&gt;-->
+
+<!--&lt;!&ndash; common jquery plugin &ndash;&gt;-->
+<!--<script src="assets/js/jquery-3.3.1.min.js"></script>-->
+<!--&lt;!&ndash; //common jquery plugin &ndash;&gt;-->
+
+<!--&lt;!&ndash; /counter&ndash;&gt;-->
+<!--<script src="assets/js/counter.js"></script>-->
+<!--&lt;!&ndash; //counter&ndash;&gt;-->
+
+<!--&lt;!&ndash; theme switch js (light and dark)&ndash;&gt;-->
+<!--<script src="assets/js/theme-change.js"></script>-->
+<!--&lt;!&ndash; //theme switch js (light and dark)&ndash;&gt;-->
+
+<!--&lt;!&ndash; MENU-JS &ndash;&gt;-->
+<!--<script>-->
+<!--        $(window).on("scroll", function () {-->
+<!--            var scroll = $(window).scrollTop();-->
+
+<!--            if (scroll >= 80) {-->
+<!--                $("#site-header").addClass("nav-fixed");-->
+<!--            } else {-->
+<!--                $("#site-header").removeClass("nav-fixed");-->
+<!--            }-->
+<!--        });-->
+
+<!--        //Main navigation Active Class Add Remove-->
+<!--        $(".navbar-toggler").on("click", function () {-->
+<!--            $("header").toggleClass("active");-->
+<!--        });-->
+<!--        $(document).on("ready", function () {-->
+<!--            if ($(window).width() > 991) {-->
+<!--                $("header").removeClass("active");-->
+<!--            }-->
+<!--            $(window).on("resize", function () {-->
+<!--                if ($(window).width() > 991) {-->
+<!--                    $("header").removeClass("active");-->
+<!--                }-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
+<!--&lt;!&ndash; //MENU-JS &ndash;&gt;-->
+
+<!--&lt;!&ndash; disable body scroll which navbar is in active &ndash;&gt;-->
+<!--<script>-->
+<!--        $(function () {-->
+<!--            $('.navbar-toggler').click(function () {-->
+<!--                $('body').toggleClass('noscroll');-->
+<!--            })-->
+<!--        });-->
+<!--    </script>-->
+<!--&lt;!&ndash; //disable body scroll which navbar is in active &ndash;&gt;-->
+
+<!--&lt;!&ndash; bootstrap &ndash;&gt;-->
+<!--<script src="assets/js/bootstrap.min.js"></script>-->
+<!--&lt;!&ndash; //bootstrap &ndash;&gt;-->
+<!--&lt;!&ndash; //Js scripts &ndash;&gt;-->
+<!--</body>-->
+
+<!--</html>-->
