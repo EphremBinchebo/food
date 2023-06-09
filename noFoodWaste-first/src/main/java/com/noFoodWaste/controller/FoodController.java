@@ -1,34 +1,38 @@
 package com.noFoodWaste.controller;
 
-import com.noFoodWaste.model.Food;
-import com.noFoodWaste.service.FoodService;
-import jakarta.annotation.Resource;
+import com.noFoodWaste.service.FoodServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
-@RestController
+@Controller
 public class FoodController {
 
-    @Resource(name = "foodService")
-    private FoodService foodService;
+    @Autowired
+    private FoodServiceImpl foodServiceImpl;
+
+    @GetMapping("/food")
+    public String viewFoodPage(Model model){
+        model.addAttribute("allfoodlist", foodServiceImpl.getAllFood());
+        return "food";
+
+    }
 
     @RequestMapping(value = {"/food"})
     public String displayFood(){
         return "food";
     }
 
-    @GetMapping("/foods")
-    public List<Food> getFood(){
-        List<Food> foods = foodService.getAllFood();
-
-        if (foods == null || foods.isEmpty()) {
-            throw new IllegalArgumentException("No food, yet");
-        } else {
-            return foods;
-        }
-    }
+//    @GetMapping("/foods")
+//    public List<Food> getFood(){
+//        List<Food> foods = foodService.getAllFood();
+//
+//        if (foods == null || foods.isEmpty()) {
+//            throw new IllegalArgumentException("No food, yet");
+//        } else {
+//            return foods;
+//        }
+//    }
 }

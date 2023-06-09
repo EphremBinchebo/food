@@ -1,3 +1,19 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+    <h3>All Food</h3>
+    <tbody>
+        <tr th:each="food:${allfoodlist}">
+            <td th:text="${food.name}"></td>
+            <td th:text="${food.amount}"></td>
+            <td th:text="${food.location}"></td>
+        </tr>
+    </tbody>
+
+
+</html>
+
+
 <!--&lt;!&ndash;-->
 <!--Author: W3layouts-->
 <!--Author URL: http://w3layouts.com-->
